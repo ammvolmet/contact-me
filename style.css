@@ -70,3 +70,27 @@ form button:hover {
      0 0 200px rgb(241, 158, 5);
 
 }
+
+.developer {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0ef;
+    background-color: #041429;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 20px;
+    border: transparent;
+    border-radius: 14px;
+    box-shadow: 0 0 5px #041429,
+    0 0 25px #041429;
+    animation: slideTop 1s 2s ease forwards;
+}
+.developer:hover {
+    box-shadow: 0 0 5px rgb(117, 14, 227),
+    0 0 25px rgb(117, 14, 227), 
+    0 0 50px rgb(117, 14, 227), 
+    0 0 100px rgb(117, 14, 227),
+     0 0 200px rgb(117, 14, 227);
+}
