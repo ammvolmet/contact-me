@@ -58,6 +58,9 @@ form button {
     cursor: pointer;
     width: 150px;
     margin: 20px auto 0;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
 }
 
 form button:hover {
@@ -88,9 +91,20 @@ form button:hover {
     animation: slideTop 1s 2s ease forwards;
 }
 .developer:hover {
-    box-shadow: 0 0 5px rgb(117, 14, 227),
-    0 0 25px rgb(117, 14, 227), 
-    0 0 50px rgb(117, 14, 227), 
-    0 0 100px rgb(117, 14, 227),
-     0 0 200px rgb(117, 14, 227);
+    box-shadow: 0 0 5px #081b29,
+     0 0 25px #081b29, 
+     0 0 50px #081b29, 
+     0 0 100px #081b29,
+      0 0 200px #081b29;
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 }
