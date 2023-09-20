@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <link rel="icon" type="image/png" href="vivek-fav.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" action onsubmit="sendEmail();reset();return false">
+            <h3>Get in Touch!</h3>
+              <input class="name" type="text" name="name" id="name" placeholder="Enter your name" required="">
+
+              <input class="email" type="email" name="email" id="email" placeholder="Enter your email address" required="">
+
+              <input class="subject" type="text" name="subject" id="subject" placeholder="Enter your subject" required="">
+
+              <textarea name="message" id="message" cols="5" rows="4" class="message" placeholder="How can we help you?" required=""></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
